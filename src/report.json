@@ -1,0 +1,32 @@
+{
+    "report_generated_on": "2026-02-21 00:55:10",
+    "image_analyzed": "data/sample_images/hdkhd.jpg",
+    "face_count": 8,
+    "exif_metadata": {
+        "XResolution": [
+            300,
+            1
+        ],
+        "YResolution": [
+            300,
+            1
+        ],
+        "ResolutionUnit": 2,
+        "Software": " ",
+        "YCbCrPositioning": 1,
+        "Copyright": "Rawpixel Ltd."
+    },
+    "entities_detected": {
+        "names": [],
+        "locations": [],
+        "emails": [],
+        "dates": []
+    },
+    "privacy_risk": {
+        "score": 30,
+        "level": "LOW",
+        "reasons": [
+            "Faces detected"
+        ]
+    }
+}
