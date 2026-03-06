@@ -1,24 +1,24 @@
-# OIPA - Open Source Image Privacy Analyzer
+OIPA - Open Source Image Privacy Analyzer
 
-> OIPA is a lightweight yet powerful image privacy analysis tool. Built for cybersecurity & OSINT research, it scans images for embedded metadata, detects faces, extracts entities using AI/NLP, and generates privacy risk reports based on your findings.
+OIPA is a lightweight yet powerful image privacy analysis tool. Built for cybersecurity & OSINT research, it scans images for embedded metadata, detects faces, extracts entities using AI/NLP, and generates privacy risk reports based on your findings.
 
----
+✨ Features
 
-## ✨ Features
+✅ EXIF Metadata Extraction (GPS, timestamps, camera info)
 
-* ✅ EXIF Metadata Extraction (GPS, timestamps, camera info)
-* ✅ Face Detection using `face_recognition`
-* ✅ AI-based Named Entity Recognition with spaCy
-* ✅ OSINT scraping & entity merging (URLs, names, emails, etc.)
-* ✅ Privacy Risk Scoring & Categorization
-* ✅ Clean JSON Report Generation
-* ✅ CLI Tool with support for local files and image URLs
+✅ Face Detection using face_recognition
 
----
+✅ AI-based Named Entity Recognition with spaCy
 
-## 📁 Project Structure
+✅ OSINT scraping & entity merging (URLs, names, emails, etc.)
 
-```
+✅ Privacy Risk Scoring & Categorization
+
+✅ Clean JSON Report Generation
+
+✅ CLI Tool with support for local files and image URLs
+
+📁 Project Structure
 OIPA/
 ├── src/
 │   ├── ai_processor.py
@@ -29,42 +29,37 @@ OIPA/
 │   └── reverse_image_search.py
 ├── data/sample_images/
 └── main.py
-```
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/<vigero7>/OIPA.git
-cd OIPA
-```
-
-### 2. Create Virtual Environment & Install Dependencies
-
-```bash
+🚀 Getting Started
+1. Clone the Repository
+git clone https://github.com/MrRana-afk/Programming-CW1-OIPA.git
+cd Programming-CW1-OIPA
+2. Create Virtual Environment & Install Dependencies
 python -m venv venv
-venv\Scripts\activate   # On Windows
-source venv/bin/activate  # On Unix
+
+Activate environment:
+
+Windows
+
+venv\Scripts\activate
+
+Linux / Unix / macOS
+
+source venv/bin/activate
+
+Install dependencies:
+
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
-```
+3. Run the Analyzer
 
-### 3. Run the Analyzer
+Analyze local image:
 
-```bash
 python main.py --image data/sample_images/1.jpg
-# or
+
+Analyze image from URL:
+
 python main.py --url https://example.com/photo.jpg
-```
-
----
-
-## 📊 Sample Output
-
-```json
+📊 Sample Output
 {
   "image_analyzed": "data/sample_images/1.jpg",
   "face_count": 1,
@@ -82,42 +77,38 @@ python main.py --url https://example.com/photo.jpg
   },
   "report_generated_on": "2025-07-25 19:32:58"
 }
-```
+🫡 Use Cases
 
----
+Cybersecurity & Digital Privacy Awareness
 
-## 🫡 Use Cases
+OSINT Investigations
 
-* Cybersecurity & Digital Privacy Awareness
-* OSINT Investigations
-* Image Data Audits before Uploading
-* Educational Demonstrations on Metadata & PII
+Image Data Audits before Uploading
 
----
+Educational Demonstrations on Metadata & PII
 
-## ⚖️ License
+⚖️ License
 
-This project is licensed under the **MIT License**. Feel free to use, modify, and distribute with credit.
+This project is licensed under the MIT License. Feel free to use, modify, and distribute with credit.
 
----
+✨ Future Enhancements
 
-## ✨ Future Enhancements
+🔍 Real-time face recognition from live camera feeds
 
-* 🔍 Real-time face recognition from live camera feeds
-* 🌐 Reverse image search across multiple engines (e.g. Google, Bing, Tineye)
-* 🧠 Advanced AI-based OSINT enrichment (detecting real-time location, phone, emails)
-* 📡 Geolocation triangulation based on EXIF + facial region
-* 🧬 Face vector profiling and persistent identity tracking
-* 📺 Streamlit-based Web UI for easier interaction
+🌐 Reverse image search across multiple engines (Google, Bing, TinEye)
 
----
+🧠 Advanced AI-based OSINT enrichment
 
-## 🙌 Author
+📡 Geolocation triangulation based on EXIF + facial region
 
-**Ankit Singh**
+🧬 Face vector profiling and persistent identity tracking
+
+📺 Streamlit-based Web UI for easier interaction
+
+🙌 Author
+
+Manish Rana
 Cybersecurity Student | OSINT Enthusiast | Python Developer
-GitHub: [@ankit-singh](https://github.com/vigero7>)
 
----
-
-> If you find this project useful, consider giving it a ⭐ star!
+GitHub:
+https://github.com/MrRana-afk
